@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API Keys (loaded from environment or dashboard input)
-YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY", "")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+API_KEY = os.getenv("YOUTUBE_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Niche List - 10 viral niches
 NICHES = [
