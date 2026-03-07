@@ -1,12 +1,16 @@
 import streamlit as st
 import json
-
+import os
 
 st.title("YouTube Viral Dashboard")
 
-with open("../data/niche_rank.json") as f:
+path = os.path.join("data","niche_rank.json")
 
-    data = json.load(f)
+if os.path.exists(path):
+    with open(path) as f:
+        data = json.load(f)
+else:
+    data = {}
 
 for niche in data:
 
