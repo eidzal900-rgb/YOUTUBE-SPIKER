@@ -55,3 +55,4 @@ SCRIPTS_DIR = "data/scripts"
 # Polling Configuration
 POLL_INTERVAL_MINUTES = 10
 SEARCH_INTERVAL_HOURS = 3
+SHORT_LENGTH = 60
